@@ -5,13 +5,13 @@
 class Openemail < Formula
   desc "Command-line client for the OpenEmail platform"
   homepage "https://github.com/Open-Email/cli"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Open-Email/cli/releases/download/v0.4.0/openemail_0.4.0_darwin_amd64.tar.gz"
-      sha256 "000ef5a833e6988b4a6921e96b7280783f5ca3a4e2bfe626a046937849fd8673"
+      url "https://github.com/Open-Email/cli/releases/download/v0.5.0/openemail_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a41ec45bce0e18ca0803ba6a5cb70d259404771146dc1f534a4f476d6ad99218"
 
       define_method(:install) do
         bin.install "openemail"
@@ -21,8 +21,8 @@ class Openemail < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Open-Email/cli/releases/download/v0.4.0/openemail_0.4.0_darwin_arm64.tar.gz"
-      sha256 "a5f3760bec7eef008151356af19ff74dab652c06aeea7b9f28df1f7282eb6c39"
+      url "https://github.com/Open-Email/cli/releases/download/v0.5.0/openemail_0.5.0_darwin_arm64.tar.gz"
+      sha256 "8c78ff3e4eceb36c49de5ab76a21b48bbc4d0d0f4216017b7577a2589b2a2a7e"
 
       define_method(:install) do
         bin.install "openemail"
@@ -35,8 +35,8 @@ class Openemail < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Open-Email/cli/releases/download/v0.4.0/openemail_0.4.0_linux_amd64.tar.gz"
-      sha256 "715075e620d622a6a45d6f8c3abcbc24042d94b710f34b9fe013ff65c965dab7"
+      url "https://github.com/Open-Email/cli/releases/download/v0.5.0/openemail_0.5.0_linux_amd64.tar.gz"
+      sha256 "97351a5b565e2d05e8a71a202a9dbb28fa6eb5bdea42fbb86666069ffe4e1c54"
       define_method(:install) do
         bin.install "openemail"
         bash_completion.install "completions/openemail.bash" => "openemail"
@@ -45,8 +45,8 @@ class Openemail < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Open-Email/cli/releases/download/v0.4.0/openemail_0.4.0_linux_arm64.tar.gz"
-      sha256 "66071920fb3b4c72d7e66e1e3988814c3af1cee4ad77ae1422ad4277baaf821c"
+      url "https://github.com/Open-Email/cli/releases/download/v0.5.0/openemail_0.5.0_linux_arm64.tar.gz"
+      sha256 "6529370b634b58a97ecfc3ec4c4511782aa0833c513fd6ef6fb5deebab70151a"
       define_method(:install) do
         bin.install "openemail"
         bash_completion.install "completions/openemail.bash" => "openemail"
